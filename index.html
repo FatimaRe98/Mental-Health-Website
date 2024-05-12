@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>EmotiVista</title>
+  <link href="css/style.css" type="text/css" rel="stylesheet">
+</head>
+<body class="home">
+  <header>
+    <div class="inner-header">
+      <a href="index.html"><img id="logo" src="images/logo.png" alt="Logo"></a>
+    </div>   <!--end of inner-header-->
+    <nav id="primary">
+      <ul>
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li class="dropdown">
+          <a href="#" class="hover">Workshops</a>
+          <ul class="drop-down">
+            <li><a href="cbt.html">Cognitive Behavioral Therapy</a></li>
+            <li><a href="mbsr.html">Mindfulness-Based Stress Reduction</a></li>
+            <li><a href="tic.html">Trauma-Informed Care</a></li>
+          </ul>
+        </li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="login.html">Registration</a></li>
+      </ul>
+    </nav>
+
+  </header>
+  <div id="wrapper">
+    <div id="hero">
+      <h1> My final project topic is: Mental Health (Emotivista) </h1>
+      <div class="slideshow-container">
+        <div class="mySlides fade">
+          <div class="numbertext">1 / 3</div>
+          <img src="images/image1.jpg" alt="slide1">
+        </div>  <!--end of mySlides fade-->
+      
+        <div class="mySlides fade">
+          <div class="numbertext">2 / 3</div>
+          <img src="images/image2.jpg" alt="slide2">
+        </div>  <!--end of mySlides fade-->
+      
+        <div class="mySlides fade">
+          <div class="numbertext">3 / 3</div>
+          <img src="images/image3.jpg" alt="slide3">
+        </div> <!--end of mySlides fade-->
+      
+        <a class="prev" onclick="plusSlides(-1)">❮</a>
+        <a class="next" onclick="plusSlides(1)">❯</a>
+      </div>  <!--end of slideshow-container-->
+
+      <div id="sign">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+      </div>  <!--end of sign-->
+    </div><!--end of hero-->
+    <div class="interoduction">
+      <div class="background-intro"></div>
+      <div class="overlay-intro">
+        <div class="content-intro">
+          <p>
+           Emotivista is a leading mental health center dedicated to providing exceptional care and support to individuals seeking emotional well-being. As a specialized facility, Emotivista offers a wide range of comprehensive services.
+          </p>
+          <div id="read-more" class="read-more-content">
+            <p>
+              Their team of highly skilled professionals, including therapists, counselors, and psychiatrists, provide personalized treatment plans and evidence-based therapies to promote healing and growth. Emotivista places a strong emphasis on creating a nurturing and non-judgmental environment, where individuals can openly express their emotions and concerns. Through innovative approaches and cutting-edge techniques, Emotivista strives to empower individuals, enhance resilience, and foster lasting positive change. With a commitment to promoting mental wellness and resilience, Emotivista is dedicated to helping individuals navigate their mental health journey and achieve a greater sense of emotional well-being.
+            </p>
+          </div> <!--end of read-more-->
+          <button id="read-more-button" class="read-more-button" onclick="toggleReadMore()">Read More</button>
+        </div>  <!-- end of content-intro-->
+      </div>  <!--end of overlay-intro-->
+    </div>  <!--end of interoduction-->
+    <div id="workshops">
+      <fieldset>
+        <legend> Workshops</legend>
+        <div class="row"></div>
+        <div class="third">
+            <img src="images/cbt.jpg" alt="Cognitive Behavioral Therapy">
+            <h3>Cognitive Behavioral Therapy</h3>
+            <p> Our Cognitive Behavioral Therapy (CBT) workshop equips participants with knowledge, skills, and practical tools to apply CBT principles and techniques. This evidence-based approach empowers positive changes, emotional management, and personal growth. <span>
+              <a href="cbt.html">Read More</a> </span> </p>
+        </div> <!--end first third-->
+        <div class="third">
+            <img src="images/mbsr.jpg" alt="Mindfulness-Based Stress Reduction">
+            <h3>Mindfulness-Based Stress Reduction</h3>
+            <p>Our Mindfulness-Based Stress Reduction (MBSR) workshop offers a comprehensive and scientifically-backed methodology for individuals to proactively manage stress, cultivate greater well-being, and facilitate transformative personal growth through the transformative power of mindfulness practices. <span>
+                <a href="mbsr.html">Read More</a> </span></p>
+        </div> <!--end second third-->
+        <div class="third">
+            <img src="images/tic.jpg" alt="Trauma-Informed Care ">
+            <h3>Trauma-Informed Care </h3>
+            <p>Our Trauma-Informed Care workshop is led by experienced professionals in trauma and mental health. This program combines presentations, case studies, discussions, and hands-on exercises to promote a practical understanding and application of trauma-informed principles.<span>
+                <a href="tic.html">Read More</a> </span></p>
+        </div> <!--end third -->
+    </fieldset>
+    </div> <!--End workshops-->
+  </div>   <!--end of wrapper-->
+    <div class="counsoling">
+      <div class="background-couns"></div>
+      <div class="overlay-couns">
+        <div class="content-couns">
+          <p>
+           Emotivista is a leading mental health center dedicated to providing exceptional care and support to individuals seeking emotional well-being. As a specialized facility, Emotivista offers a wide range of comprehensive services tailored to address various mental health needs.</p>
+        </div> <!--end of content-->
+        <button  class="question-button" onclick="goToContactPage()">Ask a Question</button>
+      </div> <!--end of overlay--> 
+    </div>  <!--end of counsolingt-->
+  <footer>
+    <div class="above-footer-box">
+      <div class="contact-info">
+        <p>Email: Emotivista@gmail.com</p>
+        <p>Address: 150 main street, Seattle </p>
+      </div>
+      <div class="social-media">
+        <a href="#"><img src="images/facebook-logo.png" alt="Facebook"></a>
+        <a href="#"><img src="images/twitter-logo.png" alt="Twitter"></a>
+        <a href="#"><img src="images/instagram-logo.png" alt="Instagram"></a>
+      </div>
+    </div>
+    <ul class="footer-list">
+      <li>&copy; 2021 All Rights Reserved</li>
+      <li><a href="">Terms of Use</a></li>
+      <li><a href="../index.html">Web Design by Fatima</a></li>
+      <li><a href="https://validator.w3.org/nu/?doc=http%3A%2F%2Fcompass.northseattle.edu%2F%7Efatimarizaee%2Fit161%2Ftemplate%2Findex.html"><img src="images/html-logo.png" alt="HTML % Logo"></a></li>
+    </ul>
+  </footer>
+  <script>
+    let slideIndex = 1;
+    showSlides(slideIndex);
+  
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+  
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+  
+    function showSlides(n) {
+      let i;
+      let slides = document.getElementsByClassName("mySlides");
+      let dots = document.getElementsByClassName("dot");
+      if (n > slides.length) {
+        slideIndex = 1;
+      }
+      if (n < 1) {
+        slideIndex = slides.length;
+      }
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex - 1].style.display = "block";
+      dots[slideIndex - 1].className += " active";
+    }
+    window.addEventListener('DOMContentLoaded', function() {
+      var container = document.querySelector('.container');
+      var content = document.getElementById('read-more');
+      var button = document.getElementById('read-more-button');
+      var initialContainerHeight = container.offsetHeight;
+      
+      container.addEventListener('scroll', function() {
+        if (container.scrollTop + container.offsetHeight >= container.scrollHeight) {
+          button.style.display = 'block';
+        } else {
+          button.style.display = 'none';
+        }
+      });
+    });
+    function toggleReadMore() {
+    var content = document.getElementById('read-more');
+    var button = document.getElementById('read-more-button');
+    if (content.style.display === 'none') {
+      content.style.display = 'block';
+      button.innerHTML = 'Read Less';
+      button.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'start' });
+    } else {
+      content.style.display = 'none';
+      button.innerHTML = 'Read More';
+      button.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'start' });
+    }
+  }
+  function goToContactPage() {
+    window.location.href = "contact.html"; // Replace "contact.html" with the path to your desired HTML page
+  }
+  </script>
+  </body>
+  </html>

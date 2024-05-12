@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>EmotiVista</title>
+  <link href="css/style.css" type="text/css" rel="stylesheet">
+</head>
+<body class="about">
+  <header>
+    <div class="inner-header">
+      <a href="index.html"><img id="logo" src="images/logo.png" alt="Logo"></a>
+    </div>   <!--end of inner-header-->
+    <nav id="primary">
+      <ul>
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li class="dropdown">
+          <a href="#" class="hover">Workshops</a>
+          <ul class="drop-down">
+            <li><a href="cbt.html">Cognitive Behavioral Therapy</a></li>
+            <li><a href="mbsr.html">Mindfulness-Based Stress Reduction</a></li>
+            <li><a href="tic.html">Trauma-Informed Care</a></li>
+          </ul>
+        </li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="login.html">Registration</a></li>
+      </ul>
+    </nav>
+  </header>
+  <div id="wrapper">
+    <div id="hero">
+        <h3>About Us</h3>
+        <img src="images/about-banner.jpg" alt="about-banner">
+    </div>
+    <aside>
+        <div id="quote-container">
+          <p id="quote"></p>
+        </div> <!--end of hero-->
+    </aside>
+    <main>
+      <h3>EMOTIVISTA: Empowering Well-being</h3> 
+
+      <p>At Emotivista, we are dedicated to promoting emotional well-being and providing comprehensive support to individuals seeking mental health services. With our focus on online workshops and counseling, we strive to make mental health resources accessible to everyone, regardless of location or schedule constraints.</p>
+          
+      <h3> Workshops for Personal Growth and Resilience </h3>
+      
+      <p> organization offers a wide range of interactive online workshops designed to enhance personal growth and build resilience. These workshops cover various topics such as stress management, mindfulness practices, self-care techniques, and effective communication skills.</p>
+          
+      <h3>Online Counseling for Personalized Support </h3>
+      
+      <p>At Emotivista, we understand that individualized support is crucial for mental health. That's why we provide online counseling services, allowing individuals to connect with qualified therapists from the comfort of their own homes. Our compassionate and experienced counselors offer personalized guidance, helping clients explore their emotions, develop coping mechanisms, and navigate their mental health journey.</p>
+          
+      <h3>Accessible and Convenient </h3>
+      
+      <p>We believe that mental health support should be accessible and convenient for everyone. Our online platform allows individuals to participate in workshops and counseling sessions at their own pace and schedule. Whether you're juggling work commitments, reside in a remote area, or simply prefer the comfort of your home, our virtual services ensure that you can prioritize your mental well-being without barriers.</p>
+          
+      <h3>Confidentiality and Privacy </h3>
+      
+      <p>Maintaining confidentiality and privacy is of utmost importance to us. We adhere to strict privacy protocols to ensure that all interactions and information shared during workshops and counseling sessions remain confidential and secure.</p>
+          
+      <h3>Join Us in Prioritizing Mental Health</h3>
+      
+      <p>Mental Health Matters invites you to prioritize your mental well-being. Explore our online workshops, connect with our experienced counselors, and embark on a journey of self-discovery and growth. Together, we can empower your mental health and foster lasting positive change.</p>
+          
+      <p>Visit our website or contact us today to learn more about our workshops and online counseling services.</p>
+  
+    </main>
+</div>   <!--end of wrapper-->
+<div class="counsoling">
+  <div class="background-couns"></div>
+  <div class="overlay-couns">
+    <div class="content-couns">
+      <p>
+       Emotivista is a leading mental health center dedicated to providing exceptional care and support to individuals seeking emotional well-being. As a specialized facility, Emotivista offers a wide range of comprehensive services tailored to address various mental health needs.</p>
+    </div> <!--end of content-->
+    <button  class="question-button" onclick="goToContactPage()">Ask a Question</button>
+  </div> <!--end of overlay--> 
+</div>  <!--end of counsolingt-->
+<footer>
+<div class="above-footer-box">
+  <div class="contact-info">
+    <p>Email: Emotivista@gmail.com</p>
+    <p>Address: 150 main street, Seattle </p>
+  </div>
+  <div class="social-media">
+    <a href="#"><img src="images/facebook-logo.png" alt="Facebook"></a>
+    <a href="#"><img src="images/twitter-logo.png" alt="Twitter"></a>
+    <a href="#"><img src="images/instagram-logo.png" alt="Instagram"></a>
+  </div>
+</div>
+    <ul class="footer-list">
+      <li>&copy; 2021 All Rights Reserved</li>
+      <li><a href="">Terms of Use</a></li>
+      <li><a href="../index.html">Web Design by Fatima</a></li>
+      <li><a href="https://validator.w3.org/nu/?doc=http%3A%2F%2Fcompass.northseattle.edu%2F%7Efatimarizaee%2Fit161%2Ftemplate%2Fabout.html"><img src="images/html-logo.png" alt="HTML % Logo"></a></li>
+    </ul>
+  </footer>
+  <script>
+     const quotes = [
+      "In the midst of winter, I found there was, within me, an invincible summer. - Albert Camus",
+      "The only way out is through. Life is a journey, and we must embrace every step of it, even the challenging ones. - Robert Frost",
+      "The greatest glory in living lies not in never falling, but in rising every time we fall. Each setback is an opportunity for growth and resilience. - Nelson Mandela",
+      "Believe you can and you're halfway there. Your belief in yourself is the first step towards achieving greatness. - Theodore Roosevelt"
+      ];
+
+    const quoteElement = document.getElementById('quote');
+    let currentIndex = 0;
+
+    function displayQuote() {
+      quoteElement.textContent = quotes[currentIndex];
+      currentIndex = (currentIndex + 1) % quotes.length;
+    }
+
+    setInterval(displayQuote, 20000);
+    displayQuote();
+    function goToContactPage() {
+    window.location.href = "contact.html"; // Replace "contact.html" with the path to your desired HTML page
+  }
+  </script>
+  </body>
+  </html>

@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>EmotiVista</title>
+  <link href="css/style.css" type="text/css" rel="stylesheet">
+</head>
+<body class="contact">
+  <header>
+    <div class="inner-header">
+      <a href="index.html"><img id="logo" src="images/logo.png" alt="Logo"></a>
+    </div>   <!--end of inner-header-->
+    <nav id="primary">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li class="dropdown">
+          <a href="workshops.html">Workshops</a>
+          <ul class="drop-down">
+            <li><a href="cbt.html">Cognitive Behavioral Therapy</a></li>
+            <li><a href="mbsr.html">Mindfulness-Based Stress Reduction</a></li>
+            <li><a href="tic.html">Trauma-Informed Care</a></li>
+          </ul>
+        </li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="login.html">Registration</a></li>
+      </ul>
+    </nav>
+  </header>
+  <div id="wrapper">
+    <div id="hero">
+      <img src="images/contact-banner.jpg" alt="contact-banner">
+    </div>
+    <main>
+      <form action="formhandler.php" method="post">
+        <fieldset>
+          <legend>Contact us</legend>
+          <label>First Name: </label>
+          <input type="text" name="firstname">
+          
+          <label>last Name: </label>
+          <input type="text" name="lastname">
+          
+          <label>Email: </label>
+          <input type="email" name="email">
+          
+          <label>Phone Number: </label>
+          <input type="number" name="phonenumber">
+          
+          <label>Gender</label>
+          <ul>
+            <li><input type="radio" name="gender" value="female">Female</li>
+            <li><input type="radio" name="gender" value="male">Male</li>
+            <li><input type="radio" name="gender" value="other">Other</li>
+          </ul>
+          <label>Date of Birth</label>
+          <select class="date">
+            <option value="">Select a year</option>
+            <option value="1997">2022</option>
+            <option value="1998">2022</option>
+            <option value="1999">2022</option>
+            <option value="2000">2022</option>
+            <option value="2001">2022</option>
+            <option value="2002">2022</option>
+            <option value="2003">2022</option>
+            <option value="2004">2022</option>
+            <option value="2005">2022</option>
+            <option value="2006">2022</option>
+            <option value="2007">2022</option>
+            <option value="2008">2022</option>
+            <option value="2009">2022</option>
+            <option value="2010">2022</option>
+            <option value="2011">2022</option>
+            <option value="2012">2022</option>
+            <option value="2013">2022</option>
+            <option value="2014">2022</option>
+            <option value="2015">2022</option>
+            <option value="2016">2022</option>
+            <option value="2017">2022</option>
+            <option value="2018">2022</option>
+            <option value="2019">2022</option>
+            <option value="2020">2022</option>
+            <option value="2021">2022</option>
+            <option value="2022">2022</option>
+            <option value="2023">2023</option>
+            <option value="2024">2024</option>
+          </select>
+            
+          <select class="date">
+            <option value="">Select a month</option>
+            <option value="01">January</option>
+            <option value="02">February</option>
+            <option value="03">March</option>
+            <option value="04">April</option>
+            <option value="05">MAy</option>
+            <option value="06">Jun</option>
+            <option value="07">July</option>
+            <option value="08">Aguest</option>
+            <option value="09">September</option>
+            <option value="10">October</option>
+            <option value="11">November</option>
+            <option value="12">Desember</option>
+          </select>
+          
+          <select class="date">
+            <option value="">Select a day</option>
+            <option value="01">1</option>
+            <option value="02">2</option>
+            <option value="03">3</option>
+            <option value="03">4</option>
+            <option value="03">5</option>
+            <option value="03">6</option>
+            <option value="03">7</option>
+            <option value="03">8</option>
+            <option value="03">9</option>
+            <option value="03">10</option>
+            <option value="03">11</option>
+            <option value="03">12</option>
+            <option value="03">13</option>
+            <option value="03">14</option>
+            <option value="03">15</option>
+            <option value="03">16</option>
+            <option value="03">17</option>
+            <option value="03">18</option>
+            <option value="03">19</option>
+            <option value="03">20</option>
+            <option value="03">21</option>
+            <option value="03">22</option>
+            <option value="03">23</option>
+            <option value="03">24</option>
+            <option value="03">25</option>
+            <option value="03">26</option>
+            <option value="03">27</option>
+            <option value="03">28</option>
+            <option value="03">29</option>
+            <option value="03">30</option>
+            <option value="03">31</option>
+          </select>
+        </fieldset>
+        <fieldset>
+          <legend> Counseling Services </legend>
+          <ul>
+            <li><input type="radio"  name= "servics" value="child_counseling">Child Counseling</li>
+            <li><input type="radio" name= "servics"  value="individual_counseling">Individual Counseling</li>
+            <li><input type="radio" name= "servics"  value="educatinal_counseling">Educatinal Counseling</li>
+          </ul>
+        </fieldset>
+        <fieldset>
+          <label>Questions</label>
+          <textarea name="questions"></textarea>
+          <input type="submit" name= "submit" value="Send it">
+        </fieldset>
+      </form>
+    </main>
+    <aside>
+      <img src="images/employee.jpg" alt="employee">
+      <h3>SERVISES</h3>
+      <p><strong> EMOTIVISTA Counseling Services </strong>is a professional counseling service dedicated to providing comprehensive support for individuals of all ages, with a focus on child counseling, individual counseling, and educational counseling. Our team of experienced and compassionate counselors is committed to helping clients navigate various challenges and achieve positive emotional well-being.</p>
+  </aside>
+  </div>   <!--end of wrapper-->
+  <div class="counsoling">
+    <div class="background-couns"></div>
+    <div class="overlay-couns">
+      <div class="content-couns">
+        <p>
+         Emotivista is a leading mental health center dedicated to providing exceptional care and support to individuals seeking emotional well-being. As a specialized facility, Emotivista offers a wide range of comprehensive services tailored to address various mental health needs.</p>
+      </div> <!--end of content-->
+        <button  class="question-button" onclick="goToContactPage()">Ask a Question</button>
+    </div> <!--end of overlay--> 
+  </div>  <!--end of counsolingt-->
+  <footer>
+  <div class="above-footer-box">
+    <div class="contact-info">
+      <p>Email: Emotivista@gmail.com</p>
+      <p>Address: 150 main street, Seattle </p>
+    </div>
+    <div class="social-media">
+      <a href="#"><img src="images/facebook-logo.png" alt="Facebook"></a>
+      <a href="#"><img src="images/twitter-logo.png" alt="Twitter"></a>
+      <a href="#"><img src="images/instagram-logo.png" alt="Instagram"></a>
+    </div>
+  </div>
+    <ul class="footer-list">
+      <li>&copy; 2021 All Rights Reserved</li>
+      <li><a href="">Terms of Use</a></li>
+      <li><a href="../index.html">Web Design by Fatima</a></li>
+      <li><a href="https://validator.w3.org/nu/?doc=http%3A%2F%2Fcompass.northseattle.edu%2F%7Efatimarizaee%2Fit161%2Ftemplate%2Ftic.html"><img src="images/html-logo.png" alt="HTML % Logo"></a></li>
+    </ul>
+  </footer>
+  </body>
+  </html>
